@@ -1,0 +1,1385 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rodon Properties</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.jpg' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">contactus@rodon.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +91 9846909300.
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">RODON PROPERTIES</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar" style="z-index: 999999;">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Testimonials</a></li>
+          <li class="dropdown"><a href="#"><span>Signin</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'signin' %}">sigin</a></li>
+              
+             
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'contact' %}">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('static/assets/img/3.avif')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Rodon Properties</span></h2>
+              <p class="animate__animated animate__fadeInUp">We offer comprehensive solutions tailored to meet your needs. From expert negotiation and valuation to cutting-edge virtual tours and beyond, trust us to elevate your experience and exceed expectations.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('static/assets/img/1.jpg');">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">VISION</h2>
+              <p class="animate__animated animate__fadeInUp">Our vision at Rodon Properties is to become the leading authority in real estate, renowned for our unwavering commitment to excellence, innovation, and customer satisfaction. We aspire to redefine industry standards, empower our clients, and make a positive impact in every community we serve.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('static/assets/img/2.avif')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">MISSION</h2>
+              <p class="animate__animated animate__fadeInUp">At Rodon Properties, our mission is to exceed client expectations by delivering exceptional real estate services with integrity, professionalism, and innovation. We are dedicated to helping our clients achieve their property goals while fostering lasting relationships built on trust and reliability.
+              </p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-laptop"></i></div>
+              <h4 class="title"><a href="">Property Management</a></h4>
+              <p class="description">Expert oversight of properties, handling tenant relations, maintenance, and financial aspects for optimal investment performance and landlord peace of mind.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Marketing</a></h4>
+              <p class="description">Strategic promotion utilizing various channels to attract potential buyers or tenants, maximizing exposure and value for properties</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">Negotiation</a></h4>
+              <p class="description">Skillful representation in negotiations to secure favorable terms for property transactions, ensuring client satisfaction and profitability</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>At RodonProperties, we specialize in facilitating seamless property transactions for our clients. With our expertise and dedication, we assist individuals in both buying and selling properties, ensuring a smooth and hassle-free experience. From understanding client needs to navigating the complexities of the real estate market, we are committed to delivering personalized solutions tailored to each client's goals. Whether it's finding the perfect dream home or securing the best deal for selling a property, we prioritize client satisfaction above all else. Trust Rodon Properties to guide you through every step of your property journey with professionalism and integrity.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="{% static 'assets/img/about3.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+             <img src="{% static 'assets/img/about1.jpg' %}" class="img-fluid" alt="">
+            <h3>  </h3>
+           
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Vision</h2>
+          <p>Our vision at Rodon Properties is to become the leading authority in real estate, renowned for our unwavering commitment to excellence, innovation, and customer satisfaction. We aspire to redefine industry standards, empower our clients, and make a positive impact in every community we serve.
+          </p>
+        </div>
+<!-- 
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-7.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-8.png' %}" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>We offer comprehensive solutions tailored to meet your needs. From expert negotiation and valuation to cutting-edge virtual tours and beyond, trust us to elevate your experience and exceed expectations</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="">Valuation</a></h4>
+              <p>Accurate assessment of property worth based on market trends, condition, and location, providing insightful guidance for informed decision-making.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="">Allied Services</a></h4>
+              <p>Comprehensive support services including insurance, financing, and renovation coordination, streamlining the property management process for clients.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bx-tachometer"></i>
+              </div>
+              <h4><a href="">Cleaning Services</a></h4>
+              <p>Professional cleaning solutions tailored to property needs, maintaining cleanliness and hygiene standards to enhance property appeal and tenant satisfaction</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i class="bx bx-layer"></i>
+              </div>
+              <h4><a href="">Legal Services</a></h4>
+              <p>Legal expertise in property matters, ensuring compliance with regulations, resolving disputes, and safeguarding client interests effectively</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="bx bx-slideshow"></i>
+              </div>
+              <h4><a href="">Virtual Tours & Houses</a></h4>
+              <p>Immersive virtual tours offering a realistic view of properties, enabling remote viewing and decision-making for potential buyers or tenants</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bx bx-arch"></i>
+              </div>
+              <h4><a href="">Negotiation</a></h4>
+              <p>Skillful representation in negotiations to secure favorable terms for property transactions, ensuring client satisfaction and profitability.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>OUR MISSION
+              
+              </h3>
+            <p> At Rodon Properties, our mission is to exceed client expectations by delivering exceptional real estate services with integrity, professionalism, and innovation. We are dedicated to helping our clients achieve their property goals while fostering lasting relationships built on trust and reliability.
+            </p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">contact us</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>GALLERY</h2>
+          <p>Explore our gallery showcasing our completed projects and successful deals. Get inspired by our portfolio of excellence and see how we turn visions into reality.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Plots</li>
+              <li data-filter=".filter-card">Land</li>
+              <li data-filter=".filter-web">view</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/w1.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/w2.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/w3.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/w4.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/w4.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/w5.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static  'assets/img/portfolio/w8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/w9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/w4.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/w9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/w8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/w2.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/w1.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/w8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/w9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/w1.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/w5.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p></p>
+                <div class="portfolio-links">
+                  <a href="{assets/img/portfolio/portfolio-9.jpg}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>What our Clients says?</h2>
+          <p>Discover firsthand experiences from our valued clients. Hear their stories, insights, and testimonials, reflecting our commitment to exceptional service and client satisfaction.  </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" alt="">
+              <h4>Walter White</h4>
+              <span></span>
+              <p>
+                I'm truly impressed by Rodon Properties' attention to detail and professionalism in valuation. Their accurate assessments helped me make informed decisions, resulting in profitable transactions every time
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" alt="">
+              <h4>Sarah Jhinson</h4>
+              <span></span>
+              <p>
+                Rodon Properties exceeded our expectations with their exceptional property management services. From marketing to negotiation, their team handled everything seamlessly, ensuring maximum returns on our investments.
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>William Anderson</h4>
+              <span></span>
+              <p>
+                Their commitment to client satisfaction is unmatched. Their personalized approach and responsive communication make them a pleasure to work with, ensuring a smooth and stress-free experience every time
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <section id="faq" class="faq">
+      <div class="container">
+    
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+    
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="accordion" id="faqAccordion">
+    
+              <!-- FAQ item 1 -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Q: What types of properties does Rodon Properties deal with?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A: Rodon Properties handles a diverse range of properties including residential homes, commercial spaces, land, and investment properties.
+                  </div>
+                </div>
+              </div>
+    
+              <!-- FAQ item 2 -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Q: How does Rodon Properties assist buyers in finding their ideal property?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A: We work closely with buyers to understand their preferences, budget, and requirements, utilizing our extensive network and market expertise to identify suitable properties and facilitate the purchasing process.
+                  </div>
+                </div>
+              </div>
+    
+              <!-- FAQ item 3 -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Q: What services does Rodon Properties offer to sellers?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A: Our services for sellers include property valuation, marketing strategies, negotiation support, and guidance throughout the selling process to ensure a smooth and successful transaction.
+                  </div>
+                </div>
+              </div>
+            <!-- FAQ item 4-->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    Q: Can Rodon Properties assist with property management for rental properties?
+
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A: Yes, we provide comprehensive property management services including tenant screening, rent collection, maintenance coordination, and financial reporting to ensure optimal returns for landlords
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ item 5 -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                    Q: How can I get started with Rodon Properties?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A: Simply contact us via phone, email, or through our website to schedule a consultation. Our team will discuss your needs and goals and provide tailored solutions to meet your requirements effectively.
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ item 6 -->
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                    Q: What sets Rodon Properties apart from other real estate agencies?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A:Rodon Properties stands out for its personalized service, transparency, integrity, and commitment to achieving results for clients, backed by a team of experienced professionals dedicated to client satisfaction.
+ 
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End FAQ Section -->
+      
+
+  </main><!-- End #main -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer" style="background: #111111; border: 2px solid red ;  color: #fff;  font-size: 14px; text-align: center; padding: 30px 0; z-index: 10000; bottom: 0; width: 100%;">
+    <div class="container">
+        <h3 style="font-size: 36px; font-weight: 700; color: #fff; position: relative; font-family: 'Poppins', sans-serif; padding: 0; margin: 0 0 15px 0;">RodonProperties</h3>
+        <p style="font-size: 15px; font-style: italic; padding: 0; margin: 0 0 40px 0;">At Rodon Properties, our mission is to exceed client expectations by delivering exceptional real estate services with integrity, professionalism, and innovation. We are dedicated to helping our clients achieve their property goals while fostering lasting relationships built on trust and reliability.</p>
+        <div class="social-links" style="margin: 0 0 40px 0;">
+            <a href="#" class="twitter" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="copyright" style="margin: 0 0 5px 0;">
+            &copy; Copyright <strong><span>https://altostechnologies.in/</span></strong>. All Rights Reserved
+        </div>
+    </div>
+</footer> -->
+<!-- End Footer -->
+
+  
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+.chatbot {
+position: fixed;
+top: 0;
+margin-left: 90;
+bottom: 0;
+width: 100%;
+box-shadow: 0 -6px 99px -17px rgba(0, 0, 0, 0.68);
+z-index: 99999;
+}
+@media screen and (min-width: 640px) {
+.chatbot {
+max-width: 420px;
+right: 80px;
+top: auto;
+}
+}
+.chatbot.chatbot--closed {
+top: auto;
+width: 100%;
+}
+
+.chatbot__header {
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #24602f;
+height: 54px;
+padding: 0 20px;
+width: 100%;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+.chatbot__header:hover {
+background-color: #1ab336;
+}
+.chatbot__header p {
+margin-right: 20px;
+}
+
+.chatbot__close-button {
+fill: #fff;
+}
+.chatbot__close-button.icon-speech {
+width: 20px;
+display: none;
+}
+.chatbot--closed .chatbot__close-button.icon-speech {
+display: block;
+}
+.chatbot__close-button.icon-close {
+width: 14px;
+}
+.chatbot--closed .chatbot__close-button.icon-close {
+display: none;
+}
+
+.chatbot__message-window {
+height: calc(100% - (54px + 60px));
+padding: 40px 20px 20px;
+background-color: #fff;
+overflow-x: none;
+overflow-y: auto;
+}
+@media screen and (min-width: 640px) {
+.chatbot__message-window {
+height: 380px;
+}
+}
+.chatbot__message-window::-webkit-scrollbar {
+display: none;
+}
+.chatbot--closed .chatbot__message-window {
+display: none;
+}
+
+.chatbot__messages {
+padding: 0;
+margin: 0;
+list-style: none;
+display: flex;
+flex-direction: column;
+width: auto;
+}
+.chatbot__messages li {
+margin-bottom: 20px;
+}
+.chatbot__messages li.is-ai {
+display: inline-flex;
+align-items: flex-start;
+}
+.chatbot__messages li.is-user {
+text-align: right;
+display: inline-flex;
+align-self: flex-end;
+}
+.chatbot__messages li .is-ai__profile-picture {
+margin-right: 8px;
+}
+.chatbot__messages li .is-ai__profile-picture .icon-avatar {
+width: 40px;
+height: 40px;
+padding-top: 6px;
+}
+
+.chatbot__message {
+display: inline-block;
+padding: 12px 20px;
+word-break: break-word;
+margin: 0;
+border-radius: 6px;
+letter-spacing: -0.01em;
+line-height: 1.45;
+overflow: hidden;
+}
+.is-ai .chatbot__message {
+background-color: #f0f0f0;
+margin-right: 30px;
+}
+.is-user .chatbot__message {
+background-color: #7ee0d2;
+margin-left: 30px;
+}
+.chatbot__message a {
+color: #7226e0;
+word-break: break-all;
+display: inline-block;
+}
+.chatbot__message p:first-child {
+margin-top: 0;
+}
+.chatbot__message p:last-child {
+margin-bottom: 0;
+}
+.chatbot__message button {
+background-color: #fff;
+font-weight: 300;
+border: 2px solid #7226e0;
+border-radius: 50px;
+padding: 8px 20px;
+margin: -8px 10px 18px 0;
+transition: background-color 0.2s ease;
+cursor: pointer;
+}
+.chatbot__message button:hover {
+background-color: #f2f2f2;
+}
+.chatbot__message button:focus {
+outline: none;
+}
+.chatbot__message img {
+max-width: 100%;
+}
+.chatbot__message .card {
+background-color: #fff;
+text-decoration: none;
+overflow: hidden;
+border-radius: 6px;
+color: black;
+word-break: normal;
+}
+.chatbot__message .card .card-content {
+padding: 20px;
+}
+.chatbot__message .card .card-title {
+margin-top: 0;
+}
+.chatbot__message .card .card-button {
+color: #7226e0;
+text-decoration: underline;
+}
+
+.animation:last-child {
+-webkit-animation: fadein 0.25s;
+animation: fadein 0.25s;
+-webkit-animation-timing-function: all 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+animation-timing-function: all 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.chatbot__arrow {
+width: 0;
+height: 0;
+margin-top: 18px;
+}
+
+.chatbot__arrow--right {
+border-top: 6px solid transparent;
+border-bottom: 6px solid transparent;
+border-left: 6px solid #7ee0d2;
+}
+
+.chatbot__arrow--left {
+border-top: 6px solid transparent;
+border-bottom: 6px solid transparent;
+border-right: 6px solid #f0f0f0;
+}
+
+.chatbot__entry {
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 60px;
+padding: 0 20px;
+border-top: 1px solid #e6eaee;
+background-color: #fff;
+}
+.chatbot--closed .chatbot__entry {
+display: none;
+}
+
+.chatbot__input {
+height: 100%;
+width: 80%;
+border: 0;
+}
+.chatbot__input:focus {
+outline: none;
+}
+.chatbot__input::-webkit-input-placeholder {
+color: #7f7f7f;
+}
+.chatbot__input::-moz-placeholder {
+color: #7f7f7f;
+}
+.chatbot__input::-ms-input-placeholder {
+color: #7f7f7f;
+}
+.chatbot__input::-moz-placeholder {
+color: #7f7f7f;
+}
+
+.chatbot__submit {
+fill: #7226e0;
+height: 22px;
+width: 22px;
+transition: fill 0.2s ease;
+cursor: pointer;
+}
+.chatbot__submit:hover {
+fill: #45148c;
+}
+
+.u-text-highlight {
+color: rgb(250, 228, 228);
+}
+
+.loader {
+margin-bottom: -2px;
+text-align: center;
+opacity: 0.3;
+}
+
+.loader__dot {
+display: inline-block;
+vertical-align: middle;
+width: 6px;
+height: 6px;
+margin: 0 1px;
+background: black;
+border-radius: 50px;
+-webkit-animation: loader 0.45s infinite alternate;
+animation: loader 0.45s infinite alternate;
+}
+.loader__dot:nth-of-type(2) {
+-webkit-animation-delay: 0.15s;
+animation-delay: 0.15s;
+}
+.loader__dot:nth-of-type(3) {
+-webkit-animation-delay: 0.35s;
+animation-delay: 0.35s;
+}
+
+@-webkit-keyframes loader {
+0% {
+transform: translateY(0);
+}
+100% {
+transform: translateY(-5px);
+}
+}
+
+@keyframes loader {
+0% {
+transform: translateY(0);
+}
+100% {
+transform: translateY(-5px);
+}
+}
+@-webkit-keyframes fadein {
+from {
+opacity: 0;
+margin-top: 10px;
+margin-bottom: 0;
+}
+to {
+opacity: 1;
+margin-top: 0;
+margin-bottom: 10px;
+}
+}
+@keyframes fadein {
+from {
+opacity: 0;
+margin-top: 10px;
+margin-bottom: 0;
+}
+to {
+opacity: 1;
+margin-top: 0;
+margin-bottom: 10px;
+}
+}
+* {
+box-sizing: border-box;
+}
+
+
+input {
+font-family: "Open Sans", sans-serif;
+}
+
+strong {
+font-weight: 600;
+}
+
+.intro {
+display: block;
+margin-bottom: 20px;
+}
+/* WhatsApp Popup Styles */
+.whatsapp-popup {
+position: fixed;
+bottom: 80px;
+right: 20px;
+z-index: 99999;
+}
+
+.whatsapp-popup button {
+background-color: #25D366; /* WhatsApp green color */
+color: #fff;
+border: none;
+border-radius: 50%;
+width: 90px;
+height: 90px;
+font-size: 54px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+}
+
+.whatsapp-popup button:hover {
+background-color: #128C7E; /* Darker shade of WhatsApp green on hover */
+}
+
+.whatsapp-popup button i {
+margin-right: 5px;
+}
+</style>
+<div class="chatbot chatbot--closed">
+  <div class="chatbot__header" style="z-index: 99999;">
+    <p><strong>Need Help?</strong> <span class="u-text-highlight">Enquire</span></p>
+    <svg class="chatbot__close-button icon-speech" viewBox="0 0 32 32">
+      <use xlink:href="#icon-speech" />
+    </svg>
+    <svg class="chatbot__close-button icon-close" viewBox="0 0 32 32">
+      <use xlink:href="#icon-close" />
+    </svg>
+  </div>
+  <div class="chatbot__message-window">
+    <ul class="chatbot__messages">
+      <li class="is-ai animation">
+        <div class="is-ai__profile-picture">
+          <svg class="icon-avatar" viewBox="0 0 32 32">
+            <use xlink:href="#avatar" />
+          </svg>
+        </div>
+        <span class="chatbot__arrow chatbot__arrow--left"></span>
+        <p class='chatbot__message'>Hi there 🖐. I’m Rodon, your virtual assistant. I'm here to help with your general enquiries.</p>
+      </li>
+      <!-- Answer and response added here -->
+    </ul>
+  </div>
+  <div class="chatbot__entry chatbot--closed">
+    <input type="text" style="font-size: 20px;"  class="chatbot__input" placeholder="Write a message..." />
+    <svg class="chatbot__submit" viewBox="0 0 32 32">
+      <use xlink:href="#icon-send" />
+    </svg>
+  </div>
+</div>
+<!-- Symbols -->
+<svg>
+  <!-- Close icon -->
+  <symbol id="icon-close" viewBox="0 0 32 32">
+    <title>Close</title>
+    <path d="M2.624 8.297l2.963-2.963 23.704 23.704-2.963 2.963-23.704-23.704z" />
+    <path d="M2.624 29.037l23.704-23.704 2.963 2.963-23.704 23.704-2.963-2.963z" />
+  </symbol>
+
+  <!-- Speech icon -->
+  <symbol id="icon-speech" viewBox="0 0 32 32">
+    <title>Speech</title>
+    <path d="M21.795 5.333h-11.413c-0.038 0-0.077 0-0.114 0l-0.134 0.011v2.796c0.143-0.006 0.273-0.009 0.385-0.009h11.277c0.070 0 7.074 0.213 7.074 7.695 0 5.179-2.956 7.695-9.036 7.695h-3.792c-0.691 0-1.12 0.526-1.38 1.159l-1.387 3.093-1.625 3.77 0.245 0.453h2.56l2.538-5.678h2.837c7.633 0 11.84-3.727 11.84-10.494 0.001-8.564-7.313-10.492-9.875-10.492z" />
+    <path d="M10.912 24.259c-0.242-0.442-0.703-0.737-1.234-0.737-0 0-0 0-0 0h-0.56c-0.599-0.011-1.171-0.108-1.71-0.28l0.042 0.012c-1.82-0.559-4.427-2.26-4.427-7.424 0-6.683 5.024-7.597 7.109-7.686v-2.8c-2.042 0.095-9.91 1.067-9.91 10.483 0 4.832 1.961 7.367 3.606 8.64 1.38 1.067 3.109 1.744 4.991 1.843l0.033 0.019 2.805 5.211 1.41-3.273z" />
+  </symbol>
+
+  <!-- Send icon -->
+  <symbol id="icon-send" viewBox="0 0 23.97 21.9">
+    <title>Send</title>
+    <path d="M0.31,9.43a0.5,0.5,0,0,0,0,.93l8.3,3.23L23.15,0Z"/>
+    <path d="M9,14.6H9V21.4a0.5,0.5,0,0,0,.93.25L13.22,16l6,3.32A0.5,0.5,0,0,0,20,19l4-18.4Z"/>
+  </symbol>
+  
+  <!-- Avatar icon -->
+  <symbol id="avatar" width="32" height="32" viewBox="0 0 44.25 44">
+    <title>Avatar</title>
+    <path style="fill: #26e051; fill-rule: evenodd;" d="M1035.88,1696.25a22,22,0,1,1-22.13,22A22.065,22.065,0,0,1,1035.88,1696.25Z" transform="translate(-1013.75 -1696.25)"/>
+    <path style="fill: #fff; fill-rule: evenodd;" d="M1030.18,1725.16h2.35a0.335,0.335,0,0,0,.34-0.33v-5.23h5.94v5.23a0.342,0.342,0,0,0,.34.33h2.36a0.342,0.342,0,0,0,.34-0.33v-12.36a0.34,0.34,0,0,0-.34-0.32h-2.36a0.34,0.34,0,0,0-.34.32v4.51h-5.94v-4.51a0.333,0.333,0,0,0-.34-0.32h-2.35a0.333,0.333,0,0,0-.34.32v12.36a0.335,0.335,0,0,0,.34.33" transform="translate(-1013.75 -1696.25)"/>
+  </symbol>
+  
+</svg>
+<script>const accessToken = '3796899bd37c423bad3a21a25277bce0';
+  const baseUrl = 'https://api.api.ai/api/query?v=2015091001';
+  const sessionId = '20150910';
+  const loader = `<span class='loader'><span class='loader__dot'></span><span class='loader__dot'></span><span class='loader__dot'></span></span>`;
+  const errorMessage = 'My apologies, I\'m not avail at the moment, however, feel free to call our support team directly 0123456789 or you can fillout enquire through contact us form.Our team will reach back to you.';
+  const urlPattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
+  const $document = document;
+  const $chatbot = $document.querySelector('.chatbot');
+  const $chatbotMessageWindow = $document.querySelector('.chatbot__message-window');
+  const $chatbotHeader = $document.querySelector('.chatbot__header');
+  const $chatbotMessages = $document.querySelector('.chatbot__messages');
+  const $chatbotInput = $document.querySelector('.chatbot__input');
+  const $chatbotSubmit = $document.querySelector('.chatbot__submit');
+  
+  const botLoadingDelay = 1000;
+  const botReplyDelay = 2000;
+  
+  document.addEventListener('keypress', event => {
+    if (event.which == 13) validateMessage();
+  }, false);
+  
+  $chatbotHeader.addEventListener('click', () => {
+    toggle($chatbot, 'chatbot--closed');
+    $chatbotInput.focus();
+  }, false);
+  
+  $chatbotSubmit.addEventListener('click', () => {
+    validateMessage();
+  }, false);
+  
+  const toggle = (element, klass) => {
+    const classes = element.className.match(/\S+/g) || [],
+    index = classes.indexOf(klass);
+    index >= 0 ? classes.splice(index, 1) : classes.push(klass);
+    element.className = classes.join(' ');
+  };
+  
+  const userMessage = content => {
+    $chatbotMessages.innerHTML += `<li class='is-user animation'>
+        <p class='chatbot__message'>
+          ${content}
+        </p>
+        <span class='chatbot__arrow chatbot__arrow--right'></span>
+      </li>`;
+  };
+  
+  const aiMessage = (content, isLoading = false, delay = 0) => {
+    setTimeout(() => {
+      removeLoader();
+      $chatbotMessages.innerHTML += `<li 
+        class='is-ai animation' 
+        id='${isLoading ? "is-loading" : ""}'>
+          <div class="is-ai__profile-picture">
+            <svg class="icon-avatar" viewBox="0 0 32 32">
+              <use xlink:href="#avatar" />
+            </svg>
+          </div>
+          <span class='chatbot__arrow chatbot__arrow--left'></span>
+          <div class='chatbot__message'>${content}</div>
+        </li>`;
+      scrollDown();
+    }, delay);
+  };
+  
+  const removeLoader = () => {
+    let loadingElem = document.getElementById('is-loading');
+    if (loadingElem) $chatbotMessages.removeChild(loadingElem);
+  };
+  
+  const escapeScript = unsafe => {
+    const safeString = unsafe.
+    replace(/</g, ' ').
+    replace(/>/g, ' ').
+    replace(/&/g, ' ').
+    replace(/"/g, ' ').
+    replace(/\\/, ' ').
+    replace(/\s+/g, ' ');
+    return safeString.trim();
+  };
+  
+  const linkify = inputText => {
+    return inputText.replace(urlPattern, `<a href='$1' target='_blank'>$1</a>`);
+  };
+  
+  const validateMessage = () => {
+    const text = $chatbotInput.value;
+    const safeText = text ? escapeScript(text) : '';
+    if (safeText.length && safeText !== ' ') {
+      resetInputField();
+      userMessage(safeText);
+      send(safeText);
+    }
+    scrollDown();
+    return;
+  };
+  
+  const multiChoiceAnswer = text => {
+    const decodedText = text.replace(/zzz/g, "'");
+    userMessage(decodedText);
+    send(decodedText);
+    scrollDown();
+    return;
+  };
+  
+  const processResponse = val => {
+    if (val && val.fulfillment) {
+      let output = '';
+      let messagesLength = val.fulfillment.messages.length;
+  
+      for (let i = 0; i < messagesLength; i++) {if (window.CP.shouldStopExecution(0)) break;
+        let message = val.fulfillment.messages[i];
+        let type = message.type;
+  
+        switch (type) {
+          // 0 fulfillment is text
+          case 0:
+            let parsedText = linkify(message.speech);
+            output += `<p>${parsedText}</p>`;
+            break;
+  
+          // 1 fulfillment is card
+          case 1:
+            let imageUrl = message.imageUrl;
+            let imageTitle = message.title;
+            let imageSubtitle = message.subtitle;
+            let button = message.buttons[0];
+  
+            if (!imageUrl && !button && !imageTitle && !imageSubtitle) break;
+  
+            output += `
+              <a class='card' href='${button.postback}' target='_blank'>
+                <img src='${imageUrl}' alt='${imageTitle}' />
+              <div class='card-content'>
+                <h4 class='card-title'>${imageTitle}</h4>
+                <p class='card-title'>${imageSubtitle}</p>
+                <span class='card-button'>${button.text}</span>
+              </div>
+              </a>
+            `;
+            break;
+  
+          // 2 fulfillment is a quick reply with multi-choice buttons
+          case 2:
+            let title = message.title;
+            let replies = message.replies;
+            let repliesLength = replies.length;
+            output += `<p>${title}</p>`;
+  
+            for (let i = 0; i < repliesLength; i++) {if (window.CP.shouldStopExecution(1)) break;
+              let reply = replies[i];
+              let encodedText = reply.replace(/'/g, 'zzz');
+              output += `<button onclick='multiChoiceAnswer("${encodedText}")'>${reply}</button>`;
+            }window.CP.exitedLoop(1);
+            break;}
+  
+      }window.CP.exitedLoop(0);
+  
+      removeLoader();
+      return output;
+    }
+  
+    removeLoader();
+    return `<p>${errorMessage}</p>`;
+  };
+  
+  const setResponse = (val, delay = 0) => {
+    setTimeout(() => {
+      aiMessage(processResponse(val));
+    }, delay);
+  };
+  
+  const resetInputField = () => {
+    $chatbotInput.value = '';
+  };
+  
+  const scrollDown = () => {
+    const distanceToScroll =
+    $chatbotMessageWindow.scrollHeight - (
+    $chatbotMessages.lastChild.offsetHeight + 60);
+    $chatbotMessageWindow.scrollTop = distanceToScroll;
+    return false;
+  };
+  
+  const send = (text = '') => {
+    fetch(`${baseUrl}&query=${text}&lang=en&sessionId=${sessionId}`, {
+      method: 'GET',
+      dataType: 'json',
+      headers: {
+        Authorization: 'Bearer ' + accessToken,
+        'Content-Type': 'application/json; charset=utf-8' } }).
+  
+  
+    then(response => response.json()).
+    then(res => {
+      if (res.status < 200 || res.status >= 300) {
+        let error = new Error(res.statusText);
+        throw error;
+      }
+      return res;
+    }).
+    then(res => {
+      setResponse(res.result, botLoadingDelay + botReplyDelay);
+    }).
+    catch(error => {
+      setResponse(errorMessage, botLoadingDelay + botReplyDelay);
+      resetInputField();
+      console.log(error);
+    });
+  
+    aiMessage(loader, true, botLoadingDelay);
+  };
+  </script>
+  <style>
+    /* WhatsApp Popup Styles */
+    .whatsapp-popup {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        z-index: 9999;
+    }
+  
+   
+  
+    .whatsapp-popup button:hover {
+        background-color: #128c33; /* Darker shade of WhatsApp green on hover */
+    }
+  
+    .whatsapp-popup button i {
+        margin-right: 5px;
+    }
+        </style>
+<div id="whatsappPopup" class="whatsapp-popup" style="z-index: 99999;">
+<a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">
+<button>
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+</button>   
+
+
+</a>
+</div>
+
+
+<script>
+// Function to handle the WhatsApp popup click event
+document.getElementById("whatsappPopup").addEventListener("click", function() {
+  window.location.href = "https://api.whatsapp.com/send?phone=7994165977";
+});
+</script>
+
+<footer id="footer" style="background: #111111; border: 2px solid  ; position: relative; top: 200px;  color: #fff;  font-size: 14px; text-align: center; padding: 30px 0;  bottom: 10; width: 100%;">
+  <div class="container">
+      <h3 style="font-size: 36px; font-weight: 700; color: #fff; position: relative; font-family: 'Poppins', sans-serif; padding: 0; margin: 0 0 15px 0;">RodonProperties</h3>
+      <p style="font-size: 15px; font-style: italic; padding: 0; margin: 0 0 40px 0;">At Rodon Properties, our mission is to exceed client expectations by delivering exceptional real estate services with integrity, professionalism, and innovation. We are dedicated to helping our clients achieve their property goals while fostering lasting relationships built on trust and reliability.</p>
+      <div class="social-links" style="margin: 0 0 40px 0;">
+          <a href="#" class="twitter" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright" style="margin: 0 0 5px 0;">
+          &copy; Copyright <strong><span>https://altostechnologies.in/</span></strong>. All Rights Reserved
+      </div>
+  </div>
+</footer>
+</body>
+
+</html>

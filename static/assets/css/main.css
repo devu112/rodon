@@ -1,0 +1,92 @@
+body {
+    background-color: #f0f2f5;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background-color: #90EE90; /* Greenish color */
+    padding: 30px;
+    border-radius: 25px; /* Border radius added */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto; /* Center horizontally */
+    margin-top: 50px; /* Adjusted margin to be below navbar */
+    margin-bottom: 220px; /* Adjusted margin to be at the bottom */
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    transform: scale(1.05);
+}
+
+.login-container h1 {
+    color: #003049;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    color: #004913;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #f0f2f5;
+    color: #004920;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #004918;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    color: #004902;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color:#23492d;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color:#6ec083;
+}
+
+.footer {
+    background-color:#6ec083;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.navbar {
+    background-color: #6ec083;  /* Greenish color for navbar */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    
+    color:floralwhite ;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Color for navbar links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #90EE90; /* Color for navbar links on hover */
+}
+

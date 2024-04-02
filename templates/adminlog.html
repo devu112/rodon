@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin home</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+     .message-card {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-card .card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.message-card .card-subtitle {
+    font-size: 16px;
+    font-style: italic;
+    color: #888;
+}
+
+.message-card .card-text {
+    margin-bottom: 10px;
+}
+
+.message-card .list-unstyled {
+    margin-top: 10px;
+}
+
+.message-card .delete-button {
+    margin-top: 10px;
+}
+
+        /* Custom styles for the delete button */
+        .delete-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            line-height: 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .delete-button:hover {
+            background-color: #c82333;
+        }
+    
+        /* Custom styles for card content */
+        .card-body {
+            padding: 20px;
+        }
+    
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    
+        .card-subtitle {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #6c757d; /* Subdued text color */
+        }
+    
+        .card-text {
+            font-size: 16px;
+            color: #495057; /* Text color */
+        }
+    </style>
+   
+   <style>
+
+        /* Adjust the navbar height and text color */
+        .navbar {
+            background-color: rgb(104, 226, 104)  ; 
+            color: #141313;
+        }
+
+        /* Style the navbar links */
+        .navbar a {
+            color: #000000;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(128, 227, 83, 0.1);
+        }
+
+        /* Add custom styles for the main content */
+        .main-content {
+            background-color: #f7f7f7;
+            padding: 20px;
+            min-height: calc(100vh - 56px);
+        }
+
+        .footer {
+           background-color:  #93c572;
+           color: #f7f7f7;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 10;
+            left: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 5;
+        }
+
+        /* Additional styles for the vertical navbar */
+        .navbar {
+            background-color: #93c572;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            flex-direction: column;
+            width: 200px;
+            color: rgb(6, 7, 6) ;
+            height: 100%;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar-toggler {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: rgb(7, 7, 7); /* Set the color of the hamburger icon */
+            background-color: transparent; /* Remove background color */
+            border: none; /* Remove border */
+            outline: none; /* Remove outline */
+            cursor: pointer;
+        }
+
+        .navbar-toggler-icon {
+            width: 30px; /* Adjust the width of the icon */
+            height: 3px; /* Adjust the height of the lines */
+            background-color: rgb(8, 8, 8); /* Set the color of the lines */
+            display: block;
+            position: relative;
+            margin-top: 5px; /* Adjust the spacing between the lines */
+        }
+
+        .container {
+            margin-left: 220px;
+            max-width: 600px;
+            padding: 30px;
+            background-color: #b0e57c;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            .navbar {
+                width: 100%;
+                position: static;
+                padding-bottom: 10px;
+                height: auto;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-toggler {
+                margin-bottom: 0;
+            }
+
+            .container {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+    <body>
+        <!-- Vertical Navbar -->
+            <nav class="navbar" style="background-color: #b0e57c;">
+                <!-- Show toggle button only on mobile screens -->
+                <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Show navlinks in desktop view -->
+                <div class="collapse navbar-collapse d-md-block" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'user_logout' %}">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    {% for message in messages %}
+                    <div class="col-md-4">
+                        <div class="card message-card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ message.name }}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ message.subject }}</h6>
+                                <p class="card-text">{{ message.message }}</p>
+                                <ul class="list-unstyled">
+                                    <li>Email: <a href="mailto:{{ message.email }}">{{ message.email }}</a></li>
+                                    <li>Phone: {{ message.phone }}</li>
+                                </ul>
+                                <!-- Add delete button -->
+                                <button class="btn btn-danger delete-button" onclick="deleteMessage('{{ message.id }}')">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- JavaScript to handle delete functionality -->
+        <script>
+            function deleteMessage(messageId) {
+                // Send an AJAX request to delete the message
+                $.ajax({
+                    url: "{% url 'delete_message' %}",  // Replace this with your server endpoint for deleting messages
+                    type: 'POST',
+                    data: { message_id: messageId },  // Pass the message ID to the server
+                    success: function(response) {
+                        // If the deletion is successful, remove the card from the DOM
+                        var card = document.querySelector('.message-card[data-message-id="' + messageId + '"]');
+                        if (card) {
+                            card.remove();
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle any errors that occur during the AJAX request
+                        console.error('Error deleting message:', error);
+                        alert('An error occurred while deleting the message.');
+                    }
+                });
+            }
+        </script>
+
+   
+    <footer class="footer">
+        <div>
+            <p>Copyright © 2024 Altos Technologies- Template by: <a href="https://altostechnologies.in/">altostechnologies</p></a>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
