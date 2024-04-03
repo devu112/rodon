@@ -8,12 +8,19 @@
     <!-- Add Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <style>
-     .message-card {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    
+    .col-md-4 {
+        margin-bottom: 20px; /* Add space between columns */
+    }
+
+    .message-card {
+        height: 100%; /* Ensure each card takes up the full height */
+    }
+
+    .message-card .card-body {
+        height: 100%; /* Ensure each card body takes up the full height */
+    }
+
 
 .message-card .card-title {
     font-size: 20px;
@@ -62,6 +69,7 @@
         /* Custom styles for card content */
         .card-body {
             padding: 20px;
+            
         }
     
         .card-title {
@@ -165,12 +173,21 @@
 
         .container {
             margin-left: 220px;
-            max-width: 600px;
-            padding: 30px;
+            max-width: 83%;
+            padding: 40px;
             background-color: #b0e57c;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        @media (max-width: 768px) {
+    .container {
+        
+        margin-left: 90px; /* Remove left margin for smaller screens */
+        max-width: 100%; /* Set width to 100% for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+
+    }
+}
 
         h2 {
             text-align: center;
@@ -215,7 +232,7 @@
 
     <body>
         <!-- Vertical Navbar -->
-            <nav class="navbar" style="background-color: #b0e57c;">
+            <nav class="navbar" style="background-color: #b0e57c; " >
                 <!-- Show toggle button only on mobile screens -->
                 <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >

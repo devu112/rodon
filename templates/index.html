@@ -27,14 +27,36 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<style>
+  /* Adjust column widths for medium screens */
+@media (max-width: 992px) {
+  .content-item {
+    margin-bottom: 30px;
+  }
+}
 
+/* Adjust column widths for small screens */
+@media (max-width: 768px) {
+  .content-item {
+    margin-bottom: 30px;
+  }
+}
+
+/* Adjust column widths for extra small screens */
+@media (max-width: 576px) {
+  .content-item {
+    margin-bottom: 30px;
+  }
+}
+
+</style>
   
 </head>
 
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
+  <!-- <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">contactus@rodon.com</a>
@@ -47,7 +69,7 @@
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
@@ -64,21 +86,16 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Testimonials</a></li>
-          <li class="dropdown"><a href="#"><span>Signin</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="{% url 'signin' %}">sigin</a></li>
-              
-             
-            </ul>
-          </li>
+         
+            
           <li><a class="nav-link scrollto" href="{% url 'contact' %}">Contact</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -133,20 +150,21 @@
       </a>
 
     </div>
-  </section><!-- End Hero -->
+  </section>
+  
 
   <main id="main">
 
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services section-bg">
-      <div class="container">
+      <div class="container" style="width: 70%;">
 
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-laptop"></i></div>
               <h4 class="title"><a href="">Property Management</a></h4>
-              <p class="description">Expert oversight of properties, handling tenant relations, maintenance, and financial aspects for optimal investment performance and landlord peace of mind.
+              <p class="description text-justify">Expert oversight of properties, handling tenant relations, maintenance, and financial aspects for optimal investment performance and landlord peace of mind.
               </p>
             </div>
           </div>
@@ -154,14 +172,14 @@
             <div class="icon-box">
               <div class="icon"><i class="bi bi-briefcase"></i></div>
               <h4 class="title"><a href="">Marketing</a></h4>
-              <p class="description">Strategic promotion utilizing various channels to attract potential buyers or tenants, maximizing exposure and value for properties</p>
+              <p class="description text-justify">Strategic promotion utilizing various channels to attract potential buyers or tenants, maximizing exposure and value for properties</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-              <h4 class="title"><a href="">Negotiation</a></h4>
-              <p class="description">Skillful representation in negotiations to secure favorable terms for property transactions, ensuring client satisfaction and profitability</p>
+              <h4 class="title "><a href="">Negotiation</a></h4>
+              <p class="description text-justify ">Skillful representation in negotiations to secure favorable terms for property transactions, ensuring client satisfaction and profitability</p>
             </div>
           </div>
         </div>
@@ -194,7 +212,52 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Why Us Section ======= -->
-
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose Rodon Properties</h2>
+        </div>
+    
+        <div class="row" style="margin: 0;">
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>01</span>
+            <h4>Expertise</h4>
+            <p style="color: #111111;">Benefit from our extensive knowledge and experience in the real estate industry, ensuring informed decisions and successful outcomes</p>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>02</span>
+            <h4>Personalized Service</h4>
+            <p style="color: #111111;">Enjoy tailored solutions and dedicated attention from our team, focused on understanding and fulfilling your unique property needs</p>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>03</span>
+            <h4>Transparency</h4>
+            <p style="color: #111111;">Experience transparent communication and honesty throughout our interactions, fostering trust and confidence in our services.</p>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>04</span>
+            <h4>Network</h4>
+            <p>Gain access to our wide network of industry contacts and resources, expanding your opportunities and enhancing your property experience.</p>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>05</span>
+            <h4>Integrity</h4>
+            <p>Rest assured that we uphold the highest standards of integrity and ethics in all our dealings, prioritizing your interests above all else</p>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>06</span>
+            <h4>Results-Oriented</h4>
+            <p>Count on us to deliver results, whether it's finding your dream property or achieving optimal returns on your investment. Choose Rodon Properties for a rewarding and fulfilling real estate journey.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Why Us Section -->
+   
     <!-- ======= Our Clients Section ======= -->
     <section id="clients" class="clients">
       <div class="container">
@@ -241,7 +304,7 @@
                 <i class="bx bxl-dribbble"></i>
               </div>
               <h4><a href="">Valuation</a></h4>
-              <p>Accurate assessment of property worth based on market trends, condition, and location, providing insightful guidance for informed decision-making.
+              <p class="text-justify">Accurate assessment of property worth based on market trends, condition, and location, providing insightful guidance for informed decision-making.
               </p>
             </div>
           </div>
@@ -255,7 +318,7 @@
                 <i class="bx bx-file"></i>
               </div>
               <h4><a href="">Allied Services</a></h4>
-              <p>Comprehensive support services including insurance, financing, and renovation coordination, streamlining the property management process for clients.</p>
+              <p class="text-justify">Comprehensive support services including insurance, financing, and renovation coordination, streamlining the property management process for clients.</p>
             </div>
           </div>
 
@@ -268,7 +331,7 @@
                 <i class="bx bx-tachometer"></i>
               </div>
               <h4><a href="">Cleaning Services</a></h4>
-              <p>Professional cleaning solutions tailored to property needs, maintaining cleanliness and hygiene standards to enhance property appeal and tenant satisfaction</p>
+              <p class="text-justify">Professional cleaning solutions tailored to property needs, maintaining cleanliness and hygiene standards to enhance property appeal and tenant satisfaction</p>
             </div>
           </div>
 
@@ -281,7 +344,7 @@
                 <i class="bx bx-layer"></i>
               </div>
               <h4><a href="">Legal Services</a></h4>
-              <p>Legal expertise in property matters, ensuring compliance with regulations, resolving disputes, and safeguarding client interests effectively</p>
+              <p class="text-justify">Legal expertise in property matters, ensuring compliance with regulations, resolving disputes, and safeguarding client interests effectively</p>
             </div>
           </div>
 
@@ -294,7 +357,7 @@
                 <i class="bx bx-slideshow"></i>
               </div>
               <h4><a href="">Virtual Tours & Houses</a></h4>
-              <p>Immersive virtual tours offering a realistic view of properties, enabling remote viewing and decision-making for potential buyers or tenants</p>
+              <p class="text-justify">Immersive virtual tours offering a realistic view of properties, enabling remote viewing and decision-making for potential buyers or tenants</p>
             </div>
           </div>
 
@@ -307,7 +370,7 @@
                 <i class="bx bx-arch"></i>
               </div>
               <h4><a href="">Negotiation</a></h4>
-              <p>Skillful representation in negotiations to secure favorable terms for property transactions, ensuring client satisfaction and profitability.</p>
+              <p class="text-justify">Skillful representation in negotiations to secure favorable terms for property transactions, ensuring client satisfaction and profitability.</p>
             </div>
           </div>
 
@@ -658,38 +721,7 @@
     </section><!-- End FAQ Section -->
       
 
-  </main><!-- End #main -->
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <!-- ======= Footer ======= -->
-  <!-- <footer id="footer" style="background: #111111; border: 2px solid red ;  color: #fff;  font-size: 14px; text-align: center; padding: 30px 0; z-index: 10000; bottom: 0; width: 100%;">
-    <div class="container">
-        <h3 style="font-size: 36px; font-weight: 700; color: #fff; position: relative; font-family: 'Poppins', sans-serif; padding: 0; margin: 0 0 15px 0;">RodonProperties</h3>
-        <p style="font-size: 15px; font-style: italic; padding: 0; margin: 0 0 40px 0;">At Rodon Properties, our mission is to exceed client expectations by delivering exceptional real estate services with integrity, professionalism, and innovation. We are dedicated to helping our clients achieve their property goals while fostering lasting relationships built on trust and reliability.</p>
-        <div class="social-links" style="margin: 0 0 40px 0;">
-            <a href="#" class="twitter" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="facebook" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="instagram" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="google-plus" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-skype"></i></a>
-            <a href="#" class="linkedin" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-linkedin"></i></a>
-        </div>
-        <div class="copyright" style="margin: 0 0 5px 0;">
-            &copy; Copyright <strong><span>https://altostechnologies.in/</span></strong>. All Rights Reserved
-        </div>
-    </div>
-</footer> -->
-<!-- End Footer -->
-
-  
-
-  <!-- Vendor JS Files -->
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{% static 'assets/js/main.js' %}"></script>
+  </main>
   <style>
     @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
 .chatbot {
@@ -1027,7 +1059,7 @@ margin-bottom: 20px;
 position: fixed;
 bottom: 80px;
 right: 20px;
-z-index: 99999;
+z-index: 9999;
 }
 
 .whatsapp-popup button {
@@ -1035,9 +1067,9 @@ background-color: #25D366; /* WhatsApp green color */
 color: #fff;
 border: none;
 border-radius: 50%;
-width: 90px;
-height: 90px;
-font-size: 54px;
+width: 60px;
+height: 60px;
+font-size: small;
 cursor: pointer;
 transition: background-color 0.3s ease;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
@@ -1052,7 +1084,7 @@ margin-right: 5px;
 }
 </style>
 <div class="chatbot chatbot--closed">
-  <div class="chatbot__header" style="z-index: 99999;">
+  <div class="chatbot__header">
     <p><strong>Need Help?</strong> <span class="u-text-highlight">Enquire</span></p>
     <svg class="chatbot__close-button icon-speech" viewBox="0 0 32 32">
       <use xlink:href="#icon-speech" />
@@ -1072,7 +1104,7 @@ margin-right: 5px;
         <span class="chatbot__arrow chatbot__arrow--left"></span>
         <p class='chatbot__message'>Hi there 🖐. I’m Rodon, your virtual assistant. I'm here to help with your general enquiries.</p>
       </li>
-      <!-- Answer and response added here -->
+     
     </ul>
   </div>
   <div class="chatbot__entry chatbot--closed">
@@ -1083,36 +1115,7 @@ margin-right: 5px;
   </div>
 </div>
 <!-- Symbols -->
-<svg>
-  <!-- Close icon -->
-  <symbol id="icon-close" viewBox="0 0 32 32">
-    <title>Close</title>
-    <path d="M2.624 8.297l2.963-2.963 23.704 23.704-2.963 2.963-23.704-23.704z" />
-    <path d="M2.624 29.037l23.704-23.704 2.963 2.963-23.704 23.704-2.963-2.963z" />
-  </symbol>
 
-  <!-- Speech icon -->
-  <symbol id="icon-speech" viewBox="0 0 32 32">
-    <title>Speech</title>
-    <path d="M21.795 5.333h-11.413c-0.038 0-0.077 0-0.114 0l-0.134 0.011v2.796c0.143-0.006 0.273-0.009 0.385-0.009h11.277c0.070 0 7.074 0.213 7.074 7.695 0 5.179-2.956 7.695-9.036 7.695h-3.792c-0.691 0-1.12 0.526-1.38 1.159l-1.387 3.093-1.625 3.77 0.245 0.453h2.56l2.538-5.678h2.837c7.633 0 11.84-3.727 11.84-10.494 0.001-8.564-7.313-10.492-9.875-10.492z" />
-    <path d="M10.912 24.259c-0.242-0.442-0.703-0.737-1.234-0.737-0 0-0 0-0 0h-0.56c-0.599-0.011-1.171-0.108-1.71-0.28l0.042 0.012c-1.82-0.559-4.427-2.26-4.427-7.424 0-6.683 5.024-7.597 7.109-7.686v-2.8c-2.042 0.095-9.91 1.067-9.91 10.483 0 4.832 1.961 7.367 3.606 8.64 1.38 1.067 3.109 1.744 4.991 1.843l0.033 0.019 2.805 5.211 1.41-3.273z" />
-  </symbol>
-
-  <!-- Send icon -->
-  <symbol id="icon-send" viewBox="0 0 23.97 21.9">
-    <title>Send</title>
-    <path d="M0.31,9.43a0.5,0.5,0,0,0,0,.93l8.3,3.23L23.15,0Z"/>
-    <path d="M9,14.6H9V21.4a0.5,0.5,0,0,0,.93.25L13.22,16l6,3.32A0.5,0.5,0,0,0,20,19l4-18.4Z"/>
-  </symbol>
-  
-  <!-- Avatar icon -->
-  <symbol id="avatar" width="32" height="32" viewBox="0 0 44.25 44">
-    <title>Avatar</title>
-    <path style="fill: #26e051; fill-rule: evenodd;" d="M1035.88,1696.25a22,22,0,1,1-22.13,22A22.065,22.065,0,0,1,1035.88,1696.25Z" transform="translate(-1013.75 -1696.25)"/>
-    <path style="fill: #fff; fill-rule: evenodd;" d="M1030.18,1725.16h2.35a0.335,0.335,0,0,0,.34-0.33v-5.23h5.94v5.23a0.342,0.342,0,0,0,.34.33h2.36a0.342,0.342,0,0,0,.34-0.33v-12.36a0.34,0.34,0,0,0-.34-0.32h-2.36a0.34,0.34,0,0,0-.34.32v4.51h-5.94v-4.51a0.333,0.333,0,0,0-.34-0.32h-2.35a0.333,0.333,0,0,0-.34.32v12.36a0.335,0.335,0,0,0,.34.33" transform="translate(-1013.75 -1696.25)"/>
-  </symbol>
-  
-</svg>
 <script>const accessToken = '3796899bd37c423bad3a21a25277bce0';
   const baseUrl = 'https://api.api.ai/api/query?v=2015091001';
   const sessionId = '20150910';
@@ -1325,29 +1328,44 @@ margin-right: 5px;
     aiMessage(loader, true, botLoadingDelay);
   };
   </script>
-  <style>
-    /* WhatsApp Popup Styles */
-    .whatsapp-popup {
-        position: fixed;
-        bottom: 80px;
-        right: 20px;
-        z-index: 9999;
-    }
+
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer" style="background: #111111; border: 2px solid red ;  color: #fff;  font-size: 14px; text-align: center; padding: 30px 0; z-index: 10000; bottom: 0; width: 100%;">
+    <div class="container">
+        <h3 style="font-size: 36px; font-weight: 700; color: #fff; position: relative; font-family: 'Poppins', sans-serif; padding: 0; margin: 0 0 15px 0;">RodonProperties</h3>
+        <p style="font-size: 15px; font-style: italic; padding: 0; margin: 0 0 40px 0;">At Rodon Properties, our mission is to exceed client expectations by delivering exceptional real estate services with integrity, professionalism, and innovation. We are dedicated to helping our clients achieve their property goals while fostering lasting relationships built on trust and reliability.</p>
+        <div class="social-links" style="margin: 0 0 40px 0;">
+            <a href="#" class="twitter" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="copyright" style="margin: 0 0 5px 0;">
+            &copy; Copyright <strong><span>https://altostechnologies.in/</span></strong>. All Rights Reserved
+        </div>
+    </div>
+</footer> -->
+<!-- End Footer -->
+
   
-   
-  
-    .whatsapp-popup button:hover {
-        background-color: #128c33; /* Darker shade of WhatsApp green on hover */
-    }
-  
-    .whatsapp-popup button i {
-        margin-right: 5px;
-    }
-        </style>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+
 <div id="whatsappPopup" class="whatsapp-popup" style="z-index: 99999;">
 <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">
 <button>
-<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="55" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
   <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
 </svg>
 </button>   
@@ -1358,15 +1376,15 @@ margin-right: 5px;
 
 
 <script>
-// Function to handle the WhatsApp popup click event
+
 document.getElementById("whatsappPopup").addEventListener("click", function() {
   window.location.href = "https://api.whatsapp.com/send?phone=7994165977";
 });
 </script>
 
-<footer id="footer" style="background: #111111; border: 2px solid  ; position: relative; top: 200px;  color: #fff;  font-size: 14px; text-align: center; padding: 30px 0;  bottom: 10; width: 100%;">
+<footer id="footer" style="background: #111111; border: 2px solid  ; position: relative; top: 200px;  color: #fff;  font-size: 14px; text-align: center; padding: 30px 0;  bottom: 10; width: 100%;" >
   <div class="container">
-      <h3 style="font-size: 36px; font-weight: 700; color: #fff; position: relative; font-family: 'Poppins', sans-serif; padding: 0; margin: 0 0 15px 0;">RodonProperties</h3>
+      <h3 style="font-size: medium; font-weight: 700; color: #fff; position: relative; font-family: 'Poppins', sans-serif; padding: 0; margin: 0 0 15px 0;">RodonProperties</h3>
       <p style="font-size: 15px; font-style: italic; padding: 0; margin: 0 0 40px 0;">At Rodon Properties, our mission is to exceed client expectations by delivering exceptional real estate services with integrity, professionalism, and innovation. We are dedicated to helping our clients achieve their property goals while fostering lasting relationships built on trust and reliability.</p>
       <div class="social-links" style="margin: 0 0 40px 0;">
           <a href="#" class="twitter" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-twitter"></i></a>
@@ -1375,9 +1393,7 @@ document.getElementById("whatsappPopup").addEventListener("click", function() {
           <a href="#" class="google-plus" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-skype"></i></a>
           <a href="#" class="linkedin" style="font-size: 18px; display: inline-block; background: #5cb874; color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s;"><i class="bx bxl-linkedin"></i></a>
       </div>
-      <div class="copyright" style="margin: 0 0 5px 0;">
-          &copy; Copyright <strong><span>https://altostechnologies.in/</span></strong>. All Rights Reserved
-      </div>
+        
   </div>
 </footer>
 </body>
